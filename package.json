@@ -1,0 +1,16 @@
+{
+  "name": "dine-restaurant",
+  "version": "1.0.0",
+  "description": "![Design preview for the Dine Website Challenge coding challenge](./preview.jpg)",
+  "main": "index.js",
+  "dependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.51.0"
+  },
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "author": "",
+  "license": "ISC"
+}
