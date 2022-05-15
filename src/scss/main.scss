@@ -1,6 +1,8 @@
-@import "./sass-utils/_mixins.scss";
-@import "./sass-utils/variables.scss";
+@import "./utilities/mixins";
+@import "./utilities/variables";
 
+@import 'base/reset';
+@import 'base/typography';
 
 @import "./pages/home";
 
