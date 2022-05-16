@@ -1,7 +1,18 @@
 body {
-    background: #fff;
-}
+    background: yellow;
 
-.hero {
-    background-color: $primary-cod;
+    @include devices(tablet) {
+        background: blue;
+    }
+
+    @include devices(mobile) {
+        background: aqua;
+    }
+
+    @include devices(desktop-large) {
+        background: purple;
+    }
+    @include devices(desktop-extra-large) {
+        background: black;
+    }
 }
