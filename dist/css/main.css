@@ -50,6 +50,27 @@ body {
   letter-spacing: -0.08;
   color: #fff; }
 
+.heading-2 {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 4rem;
+  letter-spacing: -0.5;
+  color: #fff; }
+
+.heading-3-lg {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  letter-spacing: -0.022rem;
+  color: #fff; }
+
+.heading-3-sm {
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+  letter-spacing: .2rem;
+  color: #242b37; }
+
 .text-1 {
   font-size: 1.125rem;
   font-weight: 400;
@@ -62,19 +83,60 @@ body {
   line-height: 1.75;
   letter-spacing: -0.19rem; }
 
-body {
-  background: yellow; }
-  @media only screen and (max-width: 680px) {
-    body {
-      background: blue; } }
-  @media only screen and (max-width: 481px) {
-    body {
-      background: aqua; } }
-  @media screen and (min-width: 900px) {
-    body {
-      background: purple; } }
-  @media screen and (min-width: 1200px) {
-    body {
-      background: black; } }
+.form-text {
+  font-size: 1.8rem;
+  line-height: 1.556;
+  letter-spacing: -0.22px;
+  color: #111111; }
+  .form-text--regular {
+    font-weight: 300; }
+  .form-text--bold {
+    font-weight: 700; }
+
+.button {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  border: 1px solid #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+  max-width: 23.9rem;
+  max-height: 65px;
+  width: 100%;
+  transition: ease 1s; }
+  .button:hover, .button:active {
+    color: #111111;
+    background-color: #fff; }
+
+.button--dark {
+  background-color: #111111;
+  color: #fff;
+  border: 1px solid #fff; }
+  .button--dark:hover {
+    color: #111111;
+    background: #fff;
+    border: 1px solid #242b37; }
+
+.hero {
+  background-image: url(/images/homepage/hero-bg-mobile@2x.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+  width: 100vw;
+  height: 74.8rem;
+  background-position: center center;
+  padding: 18rem 2.5rem 0rem 2.5rem; }
+  .hero__heading {
+    font-size: 2.8rem;
+    line-height: 2.9rem;
+    margin-top: 3rem; }
+  .hero__text {
+    margin-top: 4rem; }
+  .hero__button {
+    margin-top: 4rem; }
 
 /*# sourceMappingURL=main.css.map */

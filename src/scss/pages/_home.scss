@@ -1,18 +1,45 @@
 body {
-    background: yellow;
 
     @include devices(tablet) {
-        background: blue;
     }
 
     @include devices(mobile) {
-        background: aqua;
     }
 
     @include devices(desktop-large) {
-        background: purple;
+        
     }
     @include devices(desktop-extra-large) {
-        background: black;
+       
+    }
+}
+
+
+// NOTE: Focus on delivering a mobile-first experience then include other devices later.
+.hero {
+    background-image: url(/images/homepage/hero-bg-mobile@2x.jpg);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    width: 100vw;
+    height: 74.8rem;
+    background-position: center center;
+    padding: 18rem 2.5rem 0rem 2.5rem;
+
+    &__heading {
+        font-size: 2.8rem;
+        line-height: 2.9rem;
+        margin-top: 3rem;
+    }
+
+    &__text {
+        margin-top: 4rem;
+
+    }
+
+    &__button {
+        margin-top: 4rem;
     }
 }
