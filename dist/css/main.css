@@ -130,6 +130,8 @@ body {
   height: 74.8rem;
   background-position: center center;
   padding: 18rem 2.5rem 0rem 2.5rem; }
+  .hero__container {
+    background-color: black; }
   .hero__heading {
     font-size: 2.8rem;
     line-height: 2.9rem;

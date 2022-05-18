@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>DINE</title>
+  <title>dine | restaurant </title>
   <link rel="stylesheet" href="scss/main.scss">
 </head>
 <body>
@@ -24,29 +24,165 @@
 
       <!-- Features Section -->
       <section class="features">
+        <div class="features__container">
+          <div class="features__enjoyable">
+            <div class="features__card card-one">
+              <div class="features__image-enjoyable"></div>
+            </div>
+            <div class="features__content content-one">
+              <img src="/images/patterns/pattern-divide.svg" alt="" class="features__text text-2 dark">
 
+              <h2 class="features__title heading-2 dark">Enjoyable place for all the family</h2>
+              <p class="features__text text-2 dark">Our relaxed surroundings make dining</p>
+            </div>
+          </div>
+
+          <div class="features__locally">
+            <div class="features__card card-two">
+              <div class="features__image-locally"></div>
+            </div>
+            <div class="features__content content-two">
+              <img src="/images/patterns/pattern-divide.svg" alt="" class="features__content-pattern">
+
+              <h2 class="features__title heading-2 dark">The most locally sourced food</h2>
+              <p class="features__text text-2">
+                All our ingredients come directly from our farm or local fishery. So you can be sure that you’re eating the freshest, most sustainable food.
+              </p>
+            </div>
+            <img src="/images/patterns/pattern-lines.svg" alt="" class="features-floating--lines floating-lines">
+          </div>
+        </div>
       </section>
 
       <!-- Food Section-->
       <section class="food">
+        <div class="food__container">
+          <div class="food__header">
+            <img src="/images/patterns/pattern-divide.svg" alt="" class="food-pattern pattern">
+            <h2 class="food__heading heading-2 white">A few highlights from our menu</h2>
+            <p class="food__text text-1 white">We cater for all dietary requirements, but here’s a glimpse at some of our diner’s favourites. Our menu is revamped every season.</p>
+          </div>
 
+          <div class="food__items">
+            <div class="food__item">
+              <div class="food__item-image">
+                <div class="food__item-image--salmon">
+                </div>
+              </div>
+
+              <div class="food__item__text">
+                <h3 class="food__item--heading heading-3 white">Seared Salmon Fillet</h3>
+                <p class="food__item--paragraph text-1 white">Our locally sourced salmon served 
+                  with a refreshing buckwheat summer salad.</p>
+              </div>
+            </div>
+
+            <div class="food__item">
+              <div class="food__item-image">
+                <div class="food__item-image--mignon">
+                </div>
+              </div>
+
+            <div class="food__item__text">
+              <h3 class="food__item--heading heading-3">Rosemary Filet Mignon</h3>
+              <p class="food__item--paragraph text-1 white">Our prime beef served to your taste 
+                with a delicious choice of seasonal 
+                sides.</p>
+            </div>
+          </div>
+
+          <div class="food__item">
+            <div class="food__item-image">
+              <div class="food__item-image--mousse">
+              </div>
+            </div>
+
+            <div class="food__item__text">
+              <h3 class="food__item--heading heading-3 white">Summer Fruit Chocolate Mousse</h3>
+              <p class="food__item--paragraph text-1 white">Creamy mousse combined with 
+                summer fruits and dark chocolate shavings.</p>
+            </div>
+          </div>
+        </div>
+        </div>
       </section>
 
       <!-- Events Section -->
-      <section class="events">
-
+        <section class="events">
+          <h4 class="sr-only">Events</h4>
+          <div class="events__container">
+            <img class="events-floating--lines floating-lines" src="/images/patterns/pattern-lines.svg" alt="" />
+    
+            <div class="event__photos">
+              <div class="event__photo event__photo--active event__photos--family" id="photo-1"></div>
+              <div class="event__photo event__photos--special" id="photo-2"></div>
+              <div class="event__photo event__photos--social" id="photo-3"></div>
+            </div>
+    
+            <section class="events__slider">
+              <div class="events__slider--list">
+                <div class="event__item event__item--active" id="event-1">
+                  <p class="text-2">Family Gathering</p>
+                  <p class="event__line event__line--active" id="line-1"></p>
+                </div>
+                <div class="event__item" id="event-2">
+                  <p class="text-2">Special Events</p>
+                  <p class="event__line" id="line-2"></p>
+                </div>
+                <div class="event__item" id="event-3">
+                  <p class="text-2"> Social Events</p>
+                  <p class="event__line" id="line-3"></p>
+                </div>
+              </div> 
+                        
+              <div class="event__contents">
+                <div class="event__content event__content--active" id="content-1">
+                  <h2 class="event__content--title heading-2-r">Family Gathering</h2>
+                  <p class="event__content--text text-2">We love catering for entire families. So please bring everyone along for a special meal with your loved ones. We’ll provide a memorable experience for all.</p>
+                </div>
+    
+                <div class="event__content" id="content-2">
+                  <h2 class="event__content--title heading-2-r">Special Events</h2>
+                  <p class="event__content--text text-2">  Whether it’s a romantic dinner or special date you’re celebrating with others we’ll look after you. We’ll be sure to mark your special date with an unforgettable meal. </p>
+                </div>
+    
+                <div class="event__content" id="content-3">
+                  <h2 class="event__content--title heading-2-r">Social Events</h2>
+                  <p class="event__content--text text-2">  Are you looking to have a larger social event? No problem! We’re more than happy to cater for big parties. We’ll work with you to make your event a hit with everyone.  </p>
+                </div>
+                <a class="button button--dark event__button" href="/booking.html">Book a table </a>
+          </div> 
       </section>
 
       <!-- CTA Section -->
       <section class="cta">
-
+        <div class="cta__content">
+          <h2 class="cta__content--heading heading-2-r white">Ready to make a reservation?</h2>
+          <a class="button button--transparent cta__content--button" href="/booking.html">Book a table </a>
+        </div>
       </section>
     </main>
 
     <!-- Footer -->
     <footer class="footer">
       <section class="footer__container">
-
+        <div class="footer__container--logo">
+          <h3 class="sr-only">Dine Restaurant</h3>
+          <a href="/index.html">
+            <img src="/images/logo.svg" alt="Welcome to Dine Restaurant"></a>
+        </div>
+        <div class="footer__container--info">
+          <div class="footer__container--address">
+            <p class="text-2 white">Marthwaite, Sedbergh</p> 
+            <p class="text-2 white">Cumbria</p> 
+            <p class="text-2 white">+00 44 123 4567</p>
+          </div>
+          <div class="footer__container--hours">
+            <p class="text-2 white">Open Times</p>
+            <p class="text-2 white">Mon - Fri: 09:00 AM - 10:00 PM</p> 
+            <p class="text-2 white">Sat - Sun: 09:00 AM - 11:30 PM</p>
+          </div>
+        </div>
       </section>
 
       <section class="attribution">
