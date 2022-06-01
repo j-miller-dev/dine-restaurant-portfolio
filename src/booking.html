@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -7,32 +7,117 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Dine Website Challenge</title>
+  <link rel="stylesheet" href="/scss/main.scss">
 </head>
 <body>
+  <div class="wrapper">
+  <main role="main">
+    <section class="booking">
+      <header class="bk__header">
+        <div class="bk__header--container">
+          <img class="bk__header--logo logo" src="../images/logo.svg" alt="Welcome to Dine Restaurant" />
+          <h2 class="bk__header--title heading-2-r">Reservations
+          </h2>
+          <p class="bk__header--text text-2">We can’t wait to host you. If you have any special requirements please feel free to call on the phone number below. We’ll be happy to accommodate you.</p>
+          <a class="button bk__header--button" href="/booking.html">Reserve a Place </a>
+        </div>
+      </header>
 
-  Reservations
+      <section class="form__container">
+        <form id="form" class="form">
+          <div class="form__field form__field--text">
+            <label class="sr-only" for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Name" aria-label="name" class="input-box form-text form-text--regular" />
+            <p class="error-message">Error Message</p>
+          </div> 
 
-  We can’t wait to host you. If you have any special requirements please feel free to 
-  call on the phone number below. We’ll be happy to accommodate you.
+          <div class="form__field form__field--text">
+            <label class="sr-only" for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Email" aria-label="email" class="input-box form-text form-text--regular" />
+            <p class="error-message">Error Message</p>
+          </div> 
 
+          <div class="form__field--datetime" id="date">
+            <label for="date" class="form-text form-text--regular datetime-field-name">Pick a date</label>
+            <p class="error-message">Error Message</p>
+            <div class="input-container">
+              <label class="sr-only" for="month">Month</label>
+              <input type="number" name="month" aria-label="month" id="month" placeholder="MM" min="01" max="12" class="input-box form-text form-text--regular" />
+              
+              <label class="sr-only" for="month">Day</label>
+              <input type="number" name="day" aria-label="day" id="day" placeholder="DD" min="01" max="31" class="input-box form-text form-text--regular" />
+              
+              <label class="sr-only" for="year">Year</label>
+              <input type="number" name="year" aria-label="year" id="year" placeholder="YYYY" min="2021" class="input-box form-text form-text--regular" /> 
+            </div>
+          </div>
+                       
+          <div class="form__field--datetime" id="time">
+            <label class="form-text form-text--regular datetime-field-name">Pick a time</label>
+            <p class="error-message">Error Message</p>
+            <div class="input-container">
+              <label class="sr-only" for="hour">Hour</label>
+              <input type="number" name="hour" aria-label="hour" id="hour" placeholder="09" min="00" max="11" class="input-box form-text form-text--regular"/>
+              
+              <label class="sr-only" for="hour">Minute</label>
+              <input type="number" name="minutes" aria-label="minutes" id="minute" placeholder="00" min="00" max="59" class="input-box form-text form-text--regular" />
 
+              <div class="form__dropdown form__dropdown--arrow" id="arrow" for="am-pm">
+                <select name="am-pm" id="select">
+                  <optgroup>
+                    <option id="form__option" class="form-text form-text--regular" value="arrow-down" selected>AM
+                    </option>
+                    <option id="form__option" class="form-text form-text--regular"  value="arrow-down">PM</option>
+                  </optgroup>
+                  <label for="select"></label>
+                </select>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" class="arrow-down" id="icon"><path fill="none" stroke="#9E7F66" stroke-width="2" d="M1 1l8 8 8-8"/></svg>
+              </div>
+            </div> 
+          </div>
 
-  Name
-  Email
-  Pick a date
-  Pick a time
+          <div class="form__number-people">
+            <span class="sr-only">minus</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11"><path fill="#9E7F66" d="M6.425 2.977V.601H.629v2.376z" class="icon-count" id="icon-minus"/></svg> 
+            <input type="text" name="people" aria-label="people" id="people" placeholder="4 people" value="4 people" min="0" class="form-text form-text--bold number-people" />
+            <span class="sr-only">plus</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11"><path fill="#9E7F66" d="M6.227 10.156V6.727h3.429V4.342H6.227V.913H3.842v3.429H.413v2.385h3.429v3.429z" class="icon-count" id="icon-plus"/></svg>
+          </div>
+          <button type="submit" class="button button--dark button--submit">Make Reservation</button>
+        </form>
+        <img class="form-floating--lines floating-lines" src="/images/patterns/pattern-lines.svg" alt="">
+      <section>
+    </section>
+  </main>
 
-  Make Reservation
-
-
-
-  Marthwaite, Sedbergh
-  Cumbria
-  +00 44 123 4567
-
-  Open Times
-  Mon - Fri: 09:00 AM - 10:00 PM
-  Sat - Sun: 09:00 AM - 11:30 PM
-
+  <footer class=" bk__footer footer">
+    <div class="bk__footer--container">
+      <div class="bk__footer--container-logo">
+        <a href="index.html">
+          <img src="../images/logo.svg" alt="Welcome to Dine Restaurant">
+        </a>
+      </div>
+      <div class="bk__footer--container-info">
+        <div class="bk__footer--container-address">
+          <p class="text-2 white">Marthwaite, Sedbergh</p> 
+          <p class="text-2 white">Cumbria</p> 
+          <p class="text-2 white">+00 44 123 4567</p>
+        </div>
+        <div class="bk__footer--container-hours">
+          <p class="text-2 white">Open Times</p>
+          <p class="text-2 white">Mon - Fri: 09:00 AM - 10:00 PM</p> 
+          <p class="text-2 white">Sat - Sun: 09:00 AM - 11:30 PM</p>
+        </div>
+      </div>
+    </div>
+    <div class="copyright-footer">
+      <div class="attribution">Challenge by 
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://github.com/tlanettepollard">T.Lanette</a>.
+      </div>
+    </div>
+  </footer>
+  </div>
 </body>
-</html>
+
+</html> -->

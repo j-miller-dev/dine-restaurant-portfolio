@@ -1,0 +1,27 @@
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: $font-family;
+  //overflow-x: hidden;
+}
+
+/* Main Styling */
+.wrapper {
+  max-width: 148rem;
+  min-height: 100vh;
+  overflow-x: hidden;
+  margin: auto;
+  position: relative;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+}
+
+/* Design Elements */
+.hero,
+.food,
+.footer {
+  background-color: $primary-cod;
+}

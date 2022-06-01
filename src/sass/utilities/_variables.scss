@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;600;700&display=swap");
+
+// Colors
+// Primary
+$primary-beaver: #9e7f66;
+$primary-cod: #111111;
+
+// Secondary
+$secondary-mirage: #17192b;
+$secondary-ebony: #242b37;
+$secondary-shuttle: #5c6779;
+
+// Other colors
+$white: #fff;
+$black: #000;
+
+.white {
+  color: $white;
+}
+
+// Font
+$font-family: "League Spartan", sans-serif;
+$weight-light: 300;
+$weight-regular: 400;
+$weight-semi-bold: 600;
+$weight-bold: 700;
+
+/* Box Shadow */
+$bshadow-1: 0 7.5rem 10rem -5rem rgba(56, 66, 85, 0.5);
+.bshadow-1 {
+  box-shadow: $bshadow-1;
+}

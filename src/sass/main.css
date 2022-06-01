@@ -1,0 +1,498 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;600;700&display=swap");
+.white {
+  color: #fff;
+}
+
+/* Box Shadow */
+.bshadow-1 {
+  -webkit-box-shadow: 0 7.5rem 10rem -5rem rgba(56, 66, 85, 0.5);
+          box-shadow: 0 7.5rem 10rem -5rem rgba(56, 66, 85, 0.5);
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: "League Spartan", sans-serif;
+}
+
+/* Main Styling */
+.wrapper {
+  max-width: 148rem;
+  min-height: 100vh;
+  overflow-x: hidden;
+  margin: auto;
+  position: relative;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+}
+
+/* Design Elements */
+.hero,
+.food,
+.footer {
+  background-color: #111111;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+h1,
+h2,
+h3,
+body {
+  font-family: "League Spartan", sans-serif;
+}
+
+.heading-1 {
+  font-weight: 300;
+  font-size: 4rem;
+  line-height: 4.5rem;
+  letter-spacing: -0.08;
+  color: #fff;
+}
+
+.heading-2 {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 4rem;
+  letter-spacing: -0.5;
+  color: #fff;
+}
+
+.heading-3-lg {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  letter-spacing: -0.022rem;
+  color: #fff;
+}
+
+.heading-3-sm {
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+  letter-spacing: 0.2rem;
+  color: #242b37;
+}
+
+.heading-2-r {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.2rem;
+  letter-spacing: -0.5;
+  color: #fff;
+}
+
+.heading-3 {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  letter-spacing: -0.5;
+  color: #fff;
+}
+
+.text-1 {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: -0.22px;
+}
+
+.text-2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 2rem;
+  letter-spacing: 0.03rem;
+  color: #fff;
+}
+
+.form-text {
+  font-size: 1.8rem;
+  line-height: 1.556;
+  letter-spacing: -0.22px;
+  color: #111111;
+}
+
+.form-text--regular {
+  font-weight: 300;
+}
+
+.form-text--bold {
+  font-weight: 700;
+}
+
+.button {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  border: 1px solid #fff;
+  padding: 1rem;
+  text-align: center;
+  max-width: 23.9rem;
+  max-height: 65px;
+  width: auto;
+  -webkit-transition: ease 1s;
+  transition: ease 1s;
+}
+
+.button:hover, .button:active {
+  color: #111111;
+  background-color: #fff;
+}
+
+.button--dark {
+  background-color: #111111;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.button--dark:hover {
+  color: #111111;
+  background: #fff;
+  border: 1px solid #242b37;
+}
+
+.footer {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 5rem 2.4rem;
+  text-align: center;
+  background-color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.footer__container--logo, .footer__container--address, .footer__container--hours {
+  padding-bottom: 2rem;
+}
+
+.footer__container p {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.09rem;
+}
+
+.hero {
+  background-image: url(/images/homepage/hero-bg-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+  width: 100vw;
+  height: 74.8rem;
+  background-position: center center;
+  padding: 18rem 2.5rem 0rem 2.5rem;
+}
+
+.hero__heading {
+  font-size: 2.8rem;
+  line-height: 2.9rem;
+  margin-top: 2.5rem;
+}
+
+.hero__text {
+  margin-top: 2.5rem;
+}
+
+.hero__button {
+  margin-top: 2.5rem;
+}
+
+.features {
+  text-align: center;
+  background-repeat: no-repeat;
+}
+
+.features__container {
+  padding: 0 2.4rem 8rem;
+}
+
+.features__title {
+  color: #111111;
+  margin-top: 2rem;
+}
+
+.features__text {
+  color: #111111;
+}
+
+.features__enjoyable {
+  margin-bottom: 0.8rem;
+}
+
+.features__locally {
+  position: relative;
+}
+
+.features__card {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.features__card .features__image-enjoyable {
+  background-position: center center;
+  min-height: 40.3rem;
+  background-image: url(/images/homepage/enjoyable-place-mobile@2x.jpg);
+}
+
+.features__image-locally {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 40.3rem;
+  background-image: url(/images/homepage/locally-sourced-mobile@2x.jpg);
+}
+
+.card-one {
+  -webkit-transform: translateY(-7.2rem);
+          transform: translateY(-7.2rem);
+}
+
+.features__content {
+  margin-top: 4.8rem;
+}
+
+.food {
+  padding: 4rem 2rem 4rem 2rem;
+  height: 100%;
+  background: #000;
+}
+
+.food__container {
+  max-width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.food__header {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.food__heading {
+  margin-top: 3.2rem;
+  margin-bottom: 0.8rem;
+  line-height: 2.8rem;
+}
+
+.food__text {
+  margin-top: 0rem;
+  padding: 0;
+  margin-bottom: 4rem;
+}
+
+.food__items {
+  min-height: 70rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.food__item {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.food__item-image--salmon {
+  width: 100%;
+  height: 100%;
+}
+
+.food__item-image--mignon {
+  width: 100%;
+  height: 100%;
+}
+
+.food__item-image--chocolate {
+  width: 100%;
+  height: 100%;
+}
+
+.food__item__text {
+  padding: 1rem 2rem 4rem 2rem;
+}
+
+.events {
+  background-color: #fff;
+  padding: 2rem;
+  margin-top: 4rem;
+}
+
+.events-floating--lines {
+  display: none;
+}
+
+.events--list {
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.event__photos {
+  width: 100%;
+}
+
+.event__photos--family {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../../assets/images/homepage/family-gathering-mobile.jpg);
+  min-height: 40rem;
+  width: 100%;
+}
+
+.cta {
+  height: 20rem;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  background-image: url(../../assets/images/homepage/ready-bg-mobile.jpg);
+  background-image: image-reset(url(/images/homepage/ready-bg-mobile.jpg) 1x, url(/images/homepage/ready-bg-mobile@2x.jpg) 2x);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.cta__content {
+  height: 100%;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cta__content--button {
+  margin-top: 1.5rem;
+}
+
+.cta--heading {
+  padding: 2rem;
+}
+/*# sourceMappingURL=main.css.map */
