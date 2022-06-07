@@ -1,0 +1,173 @@
+// Events Section
+.events {
+  background-color: $white;
+  margin-top: 2rem;
+  &-floating--lines {
+    display: none;
+    @include devices(desktop) {
+      display: block;
+      position: absolute;
+      transform: translate(-5.8rem, -30.8rem);
+      z-index: 1;
+    }
+
+    @include devices(tablet) {
+      padding: 12rem 0;
+      background-image: url(/assets/images/patterns/pattern-curve-top-right.svg);
+      background-repeat: no-repeat;
+      background-position-x: -69vw;
+    }
+  }
+
+  @include devices(desktop) {
+    padding: 16rem 0;
+    background-repeat: no-repeat;
+    background-image: url(/assets/images/patterns/pattern-curve-top-right.svg);
+    background-position-x: -35rem;
+  }
+
+  &__slider {
+    color: black;
+
+    &--list {
+      text-transform: uppercase;
+      position: relative;
+      margin-bottom: 0rem;
+      text-align: center;
+      margin-top: 2rem;
+
+      @include devices(tablet) {
+        margin-top: 0rem;
+        @include flex(row, space-between);
+        padding: 2rem;
+      }
+
+      & * p {
+        color: $primary-cod;
+        opacity: 0.5;
+        font-weight: 500;
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+        letter-spacing: 0.25rem;
+        @include devices(tablet) {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  &__container {
+    @include flex(column, space-between);
+    text-align: center;
+    @include devices(desktop) {
+      max-width: 100%;
+      padding: 2rem;
+      margin: 0 auto;
+      @include flex(row, space-between);
+    }
+  }
+}
+
+.event {
+  &__photos {
+    width: 100%;
+    padding: 1.5rem;
+    padding-bottom: 0rem;
+    @include devices(desktop) {
+      width: 40%;
+    }
+
+    &--family {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      background-image: url(../../assets/images/homepage/family-gathering-mobile.jpg);
+      min-height: 40rem;
+      width: 100%;
+      @include devices(desktop) {
+        background-image: url(/images/homepage/family-gathering-desktop.jpg);
+        min-height: 60rem;
+        width: 54.2rem;
+      }
+    }
+  }
+  &__photo {
+    &--active {
+      width: 100%;
+      min-height: 28.3rem;
+
+      @include devices(tablet) {
+      }
+    }
+  }
+
+  &__contents {
+    padding: 1.5rem;
+    padding-top: 0;
+    margin-bottom: 6rem;
+    margin-top: 2rem;
+
+    @include devices(tablet) {
+      padding-left: 6rem;
+      padding-right: 6rem;
+    }
+
+    & a {
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+      font-size: 1rem;
+      letter-spacing: 0.15rem;
+    }
+  }
+
+  &__item {
+    margin-top: 1.5rem;
+    cursor: pointer;
+  }
+
+  &__item p:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 75px;
+    padding-top: 5px;
+    border-bottom: 0px solid white;
+  }
+
+  &__item--active p {
+    color: $primary-cod;
+    opacity: 1;
+    padding-bottom: 0;
+  }
+
+  &__item--active p:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 75px;
+    padding-top: 5px;
+    border-bottom: 2px solid $primary-beaver;
+  }
+
+  &__content--title {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+
+  &__content--active h2 {
+    color: black;
+    margin-bottom: 1.5rem;
+  }
+
+  &__content--active p {
+    color: black;
+    line-height: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+  }
+  &__line--active span {
+    border-bottom: $primary-beaver solid 2px;
+    border-width: 2px;
+  }
+}

@@ -1,0 +1,163 @@
+// Food Section
+.food {
+  padding: 4rem 2rem 4rem 2rem;
+  //   height: 172rem;
+  height: 100%;
+  background: $black;
+
+  @include devices(tablet) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  @include devices(desktop) {
+    padding-top: 20rem;
+    padding-bottom: 12rem;
+  }
+
+  &__container {
+    max-width: 100%;
+    margin: 0 auto;
+    @include flex(column, space-between);
+
+    @include devices(tablet) {
+      padding: 6rem;
+    }
+
+    @include devices(desktop) {
+      @include flex(row, space-between);
+      align-items: flex-start !important;
+    }
+  }
+
+  &__header {
+    text-align: center;
+    margin-bottom: 0.5rem;
+
+    @include devices(desktop) {
+      padding: minmax(2rem, 6rem);
+      margin: 2rem;
+      height: 100%;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      & > * {
+        padding-bottom: 2rem;
+      }
+
+      & > :first-child {
+        align-self: flex-start;
+        padding-bottom: 4rem;
+      }
+    }
+  }
+
+  &__heading {
+    margin-top: 2.2rem;
+    margin-bottom: 0.8rem;
+    line-height: 2.8rem;
+    font-weight: 600;
+
+    @include devices(desktop) {
+      margin: 0;
+      max-width: 40rem;
+    }
+  }
+
+  &__text {
+    margin-top: 0rem;
+    padding: 0;
+    margin-bottom: 4rem;
+  }
+
+  //   &__text {
+  //     padding-top: 2.4rem;
+  //     margin-bottom: 0.4rem;
+  //     max-width: 40rem;
+  //     margin-top: 3.2rem;
+  //     margin-right: auto;
+  //     margin-left: auto;
+  //   }
+
+  &__items {
+    min-height: 70rem;
+    @include flex(column, space-between);
+    @include devices(tablet) {
+      min-height: 30rem;
+    }
+    @include devices(desktop) {
+      min-height: 100%;
+    }
+  }
+
+  &__item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 2rem;
+    border-bottom: rgba(255, 255, 255, 0.216) 1px solid;
+    @include devices(tablet) {
+      border-bottom: none;
+    }
+
+    &:first-child {
+      padding-top: 0rem;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    @include devices(desktop) {
+      @include flex(row, space-between);
+      text-align: left;
+      margin-bottom: 2rem;
+    }
+
+    @include devices(tablet) {
+      @include flex(row, space-between);
+      text-align: left;
+    }
+
+    &-image {
+      @include devices(mobile) {
+        &--salmon {
+          width: 400px;
+          height: 100%;
+        }
+
+        &--beef {
+          width: 400px;
+          height: 100%;
+        }
+        &--chocolate {
+          width: 400px;
+          height: 100%;
+        }
+      }
+      @include devices(tablet) {
+        &--salmon {
+          width: 200px;
+          height: 100%;
+        }
+
+        &--beef {
+          width: 200px;
+          height: 100%;
+        }
+        &--chocolate {
+          width: 200px;
+          height: 100%;
+        }
+      }
+    }
+    &__text {
+      padding: 1rem 2rem 4rem 2rem;
+    }
+  }
+}

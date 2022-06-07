@@ -1,0 +1,49 @@
+// CTA Section
+.cta {
+  height: 20rem;
+  color: $white;
+  text-align: center;
+  width: 100%;
+
+  background-image: url(../../assets/images/homepage/ready-bg-mobile.jpg);
+  background-image: image-reset(
+    url(/images/homepage/ready-bg-mobile.jpg) 1x,
+    url(/images/homepage/ready-bg-mobile@2x.jpg) 2x
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @include devices(tablet) {
+    height: 15rem;
+    background-image: url(../../assets/images/homepage/ready-bg-tablet.jpg);
+  }
+
+  &__content {
+    height: 100%;
+    padding: 2rem;
+    @include flex(column, center);
+
+    @include devices(desktop-large) {
+      @include flex(row, space-around);
+    }
+
+    &--button {
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+      font-size: 1rem;
+      letter-spacing: 0.15rem;
+    }
+    &--heading {
+      padding: 2rem;
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 2.8rem;
+      @include devices(tablet) {
+        font-size: 2.5rem;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+      }
+    }
+  }
+}

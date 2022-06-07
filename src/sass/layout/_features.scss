@@ -1,0 +1,150 @@
+// Features Section
+.features {
+  text-align: center;
+  background-repeat: no-repeat;
+
+  @include devices(desktop-large) {
+    background-image: url(/images/patterns/pattern-curve-bottom-right.svg),
+      url(/images/patterns/pattern-curve-top-left.svg);
+    background-position-y: 24.2rem, bottom;
+    background-position-x: left, right;
+  }
+
+  &__container {
+    padding: 0 2.4rem 0.5rem;
+    margin-bottom: -5rem;
+
+    @include devices(desktop-large) {
+      max-width: 111rem;
+      margin: 0 auto;
+    }
+  }
+
+  &__title {
+    color: $primary-cod;
+    margin-top: 0rem;
+    line-height: 3rem;
+    font-weight: 600;
+  }
+
+  &__text {
+    color: $primary-cod;
+    font-weight: 100;
+    margin-top: 1rem;
+    line-height: 1.7rem;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+  }
+
+  &__enjoyable {
+    margin-bottom: 0.8rem;
+
+    @include devices(desktop) {
+      @include flex(row, space-between);
+      margin-bottom: -2.9rem;
+    }
+  }
+
+  &__locally {
+    position: relative;
+    transform: translateY(-10rem);
+    @include devices(desktop) {
+      @include flex(row-reverse, space-between);
+    }
+
+    .features-floating--lines {
+      @include devices(desktop) {
+        display: block;
+        right: 0;
+        top: 36rem;
+        transform: translateX(8.4rem);
+      }
+    }
+  }
+  &__card {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include devices(desktop) {
+      width: 54rem;
+      min-height: 72rem;
+    }
+
+    .features__image-enjoyable {
+      background-position: center;
+      background-size: cover;
+      min-height: 32.3rem;
+      transform: translateY(-7.2rem);
+      background-image: url(/images/homepage/enjoyable-place-mobile.jpg);
+      @include devices(desktop-large) {
+        min-height: 72rem;
+        background-image: url(../../assets/images/homepage/enjoyable-place-desktop@2x.jpg);
+      }
+    }
+  }
+
+  &__image-locally {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 32.3rem;
+
+    background-image: url(../../assets/images/homepage/locally-sourced-mobile@2x.jpg);
+
+    @include devices(desktop) {
+      //width: 54rem;
+      min-height: 72rem;
+      background-image: url(../../assets/images/homepage/locally-sourced-desktop@2x.jpg);
+    }
+  }
+}
+
+.card-one {
+  transform: translateY(-7.2rem);
+
+  @include devices(desktop) {
+    transform: translateY(-7rem);
+  }
+}
+
+.card-two {
+  @include devices(desktop) {
+    transform: translateY(15rem);
+  }
+}
+
+.features__content {
+  margin-top: 4.8rem;
+
+  @include devices(desktop) {
+    text-align: left;
+    max-width: 25.5rem;
+  }
+
+  &-pattern {
+    margin-bottom: 2rem;
+  }
+
+  .featured__title {
+    margin-bottom: 1.6rem;
+
+    @include devices(desktop) {
+      margin-top: 4.8rem;
+    }
+  }
+}
+
+.content-one {
+  transform: translateY(-8rem);
+
+  @include devices(desktop) {
+    transform: translateY(-4rem);
+  }
+}
+
+.content-two {
+  @include devices(desktop) {
+    transform: translateY(8rem);
+  }
+}

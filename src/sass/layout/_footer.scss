@@ -7,10 +7,29 @@
   background-color: $black;
   @include flex(column, space-between);
 
+  @include devices(desktop) {
+    height: 24rem;
+  }
+
   &__container {
     @include flex(column, space-around);
     height: 100%;
     width: 100%;
+
+    @include devices(desktop) {
+      width: 100%;
+      @include flex(row, space-around);
+      align-items: flex-start;
+    }
+
+    &--info {
+      @include devices(desktop) {
+        @include flex(row, space-between);
+        width: 67rem;
+        text-align: left;
+      }
+    }
+
     &--logo,
     &--address,
     &--hours {

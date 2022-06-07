@@ -1,0 +1,83 @@
+// NOTE: Focus on delivering a mobile-first experience then include other devices later.
+// HERO Section
+.hero {
+  @include devices(mobile) {
+    background-image: url(../../assets/images/homepage/hero-bg-mobile.jpg);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    width: 100vw;
+    max-height: 65.8rem;
+    background-position: center;
+    padding: 12rem 2.5rem 0rem 2.5rem;
+  }
+
+  @include devices(tablet) {
+    height: 60.2rem;
+    padding-top: 20.4rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+    background-image: url(../../assets/images/homepage/hero-bg-tablet@2x.jpg);
+  }
+
+  @include devices(desktop) {
+    height: 82rem;
+    padding-top: 6.5rem;
+    padding-left: 10.5rem;
+    text-align: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-image: url(../../assets/images/homepage/hero-bg-desktop@2x.jpg);
+  }
+
+  &__container {
+    @include devices(tablet) {
+      padding: 4rem;
+      padding-top: 2rem;
+    }
+    @include devices(desktop) {
+      max-width: 32.3rem;
+    }
+  }
+
+  &__heading {
+    font-size: 2.8rem;
+    line-height: 2.9rem;
+    margin-top: 2.5rem;
+
+    @include devices(desktop) {
+      margin-top: 15.3rem;
+      font-size: 3.8rem;
+      line-height: 3.5rem;
+    }
+  }
+
+  &__text {
+    margin-top: 2.5rem;
+
+    @include devices(desktop) {
+      max-width: 44.5rem;
+      line-height: 1.8rem;
+    }
+  }
+
+  &__button {
+    margin-top: 2.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.15rem;
+    @include devices(desktop) {
+      font-size: 1.2rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+}
