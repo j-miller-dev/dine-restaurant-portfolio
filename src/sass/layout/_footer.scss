@@ -8,7 +8,7 @@
   @include flex(column, space-between);
 
   @include devices(desktop) {
-    height: 24rem;
+    height: 14rem;
   }
 
   &__container {
@@ -24,8 +24,8 @@
 
     &--info {
       @include devices(desktop) {
-        @include flex(row, space-between);
-        width: 67rem;
+        @include flex(row, space-around);
+        width: 50rem;
         text-align: left;
       }
     }
@@ -34,6 +34,10 @@
     &--address,
     &--hours {
       padding-bottom: 2rem;
+
+      @include devices(desktop) {
+        padding-bottom: 0;
+      }
     }
 
     p {

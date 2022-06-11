@@ -1,18 +1,16 @@
 // Food Section
 .food {
-  padding: 4rem 2rem 4rem 2rem;
+  padding: 4rem 2rem 0rem 2rem;
   //   height: 172rem;
   height: 100%;
   background: $black;
 
   @include devices(tablet) {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 0rem 1rem 0rem 1rem;
   }
 
   @include devices(desktop) {
-    padding-top: 20rem;
-    padding-bottom: 12rem;
+    padding: 0;
   }
 
   &__container {
@@ -21,12 +19,14 @@
     @include flex(column, space-between);
 
     @include devices(tablet) {
-      padding: 6rem;
+      padding: 4rem;
     }
 
     @include devices(desktop) {
-      @include flex(row, space-between);
-      align-items: flex-start !important;
+      @include flex(row, space-around);
+      // align-items: flex-start !important;
+      padding: 6rem;
+      padding-top: 10rem;
     }
   }
 
@@ -35,14 +35,12 @@
     margin-bottom: 0.5rem;
 
     @include devices(desktop) {
+      @include flex(column, flex-start);
       padding: minmax(2rem, 6rem);
       margin: 2rem;
       height: 100%;
+      width: 26rem;
       text-align: left;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
 
       & > * {
         padding-bottom: 2rem;
@@ -54,7 +52,6 @@
       }
     }
   }
-
   &__heading {
     margin-top: 2.2rem;
     margin-bottom: 0.8rem;
@@ -71,6 +68,10 @@
     margin-top: 0rem;
     padding: 0;
     margin-bottom: 4rem;
+    @include devices(desktop) {
+      margin-bottom: 0;
+      padding: 0;
+    }
   }
 
   //   &__text {
@@ -89,7 +90,9 @@
       min-height: 30rem;
     }
     @include devices(desktop) {
-      min-height: 100%;
+      @include flex(column, space-around);
+      min-height: 30rem;
+      width: 30rem;
     }
   }
 
@@ -111,12 +114,15 @@
 
     &:last-child {
       border-bottom: none;
+      padding-bottom: 0;
     }
 
     @include devices(desktop) {
       @include flex(row, space-between);
       text-align: left;
-      margin-bottom: 2rem;
+      margin-bottom: 0;
+      padding: 0;
+      padding-bottom: 2rem;
     }
 
     @include devices(tablet) {
@@ -155,9 +161,28 @@
           height: 100%;
         }
       }
+      @include devices(desktop) {
+        &--salmon {
+          max-width: 150px;
+          height: auto;
+        }
+
+        &--beef {
+          width: 150px;
+          height: auto;
+        }
+        &--chocolate {
+          width: 150px;
+          height: auto;
+        }
+      }
     }
     &__text {
       padding: 1rem 2rem 4rem 2rem;
+      @include devices(desktop) {
+        padding: 0;
+        padding-left: 2rem;
+      }
     }
   }
 }

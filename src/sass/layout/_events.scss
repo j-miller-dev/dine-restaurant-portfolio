@@ -7,27 +7,35 @@
     @include devices(desktop) {
       display: block;
       position: absolute;
-      transform: translate(-5.8rem, -30.8rem);
+      transform: translate(-30.8rem, -16.8rem);
       z-index: 1;
     }
 
     @include devices(tablet) {
-      padding: 12rem 0;
-      background-image: url(/assets/images/patterns/pattern-curve-top-right.svg);
+      // padding: 12rem 0;
+      background-image: url(../../assets/images/patterns/pattern-curve-top-right.svg);
       background-repeat: no-repeat;
       background-position-x: -69vw;
     }
   }
 
   @include devices(desktop) {
-    padding: 16rem 0;
+    padding: 6rem;
     background-repeat: no-repeat;
     background-image: url(/assets/images/patterns/pattern-curve-top-right.svg);
-    background-position-x: -35rem;
+    background-position-x: -25rem;
+    margin-top: 0;
   }
 
   &__slider {
     color: black;
+
+    @include devices(desktop) {
+      @include flex(column-reverse, center);
+      padding: 2rem;
+      text-align: left;
+      width: 32rem;
+    }
 
     &--list {
       text-transform: uppercase;
@@ -42,6 +50,13 @@
         padding: 2rem;
       }
 
+      @include devices(desktop) {
+        text-align: left;
+        @include flex(column, flex-start);
+        align-items: flex-start;
+        width: 100%;
+      }
+
       & * p {
         color: $primary-cod;
         opacity: 0.5;
@@ -52,6 +67,9 @@
         @include devices(tablet) {
           font-size: 1rem;
         }
+        @include devices(desktop) {
+          font-size: 1rem;
+        }
       }
     }
   }
@@ -59,11 +77,14 @@
   &__container {
     @include flex(column, space-between);
     text-align: center;
+    @include devices(tablet) {
+      padding: 3rem;
+    }
     @include devices(desktop) {
       max-width: 100%;
-      padding: 2rem;
+      padding: 4rem;
       margin: 0 auto;
-      @include flex(row, space-between);
+      @include flex(row, space-around);
     }
   }
 }
@@ -74,7 +95,9 @@
     padding: 1.5rem;
     padding-bottom: 0rem;
     @include devices(desktop) {
-      width: 40%;
+      width: 32rem;
+      height: 34rem;
+      padding: 0;
     }
 
     &--family {
@@ -85,20 +108,57 @@
       background-image: url(../../assets/images/homepage/family-gathering-mobile.jpg);
       min-height: 40rem;
       width: 100%;
+      @include devices(tablet) {
+        background-image: url(/images/homepage/family-gathering-tablet.jpg);
+      }
       @include devices(desktop) {
         background-image: url(/images/homepage/family-gathering-desktop.jpg);
-        min-height: 60rem;
-        width: 54.2rem;
+        height: 100%;
+        width: 100%;
+      }
+    }
+    &--special {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-image: url(/images/homepage/special-events-mobile.jpg);
+      min-height: 40rem;
+      width: 32.7rem;
+      //margin: 0 auto;
+      @include devices(tablet) {
+        background-image: url(/images/homepage/special-events-tablet.jpg);
+      }
+      @include devices(desktop) {
+        background-image: url(/images/homepage/special-events-desktop.jpg);
+        height: 100%;
+        width: 100%;
+      }
+    }
+    &--social {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-image: url(/images/homepage/social-events-mobile.jpg);
+      min-height: 40rem;
+      width: 32.7rem;
+      @include devices(tablet) {
+        background-image: url(/images/homepage/social-events-tablet.jpg);
+      }
+      @include devices(desktop) {
+        background-image: url(/images/homepage/social-events-desktop.jpg);
+        height: 100%;
+        width: 100%;
       }
     }
   }
   &__photo {
+    display: none;
+    box-shadow: $bshadow-1;
     &--active {
+      display: inline-block;
+      z-index: 1;
       width: 100%;
       min-height: 28.3rem;
-
-      @include devices(tablet) {
-      }
     }
   }
 
@@ -119,11 +179,20 @@
       font-size: 1rem;
       letter-spacing: 0.15rem;
     }
+
+    @include devices(desktop) {
+      text-align: left;
+      margin: 0;
+      padding: 0;
+    }
   }
 
   &__item {
     margin-top: 1.5rem;
     cursor: pointer;
+    @include devices(desktop) {
+      margin: 0;
+    }
   }
 
   &__item p:after {
@@ -169,5 +238,27 @@
   &__line--active span {
     border-bottom: $primary-beaver solid 2px;
     border-width: 2px;
+  }
+}
+
+.event__content {
+  display: none;
+}
+
+.event__content--active {
+  display: block;
+  text-align: center;
+
+  @include devices(desktop) {
+    text-align: left;
+  }
+}
+
+.event__item--active {
+  color: $secondary-ebony;
+  opacity: 1;
+  // transform: translateY(1rem);
+  @include devices(desktop) {
+    text-align: left;
   }
 }

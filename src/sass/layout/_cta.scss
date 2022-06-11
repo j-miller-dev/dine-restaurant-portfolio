@@ -19,13 +19,23 @@
     background-image: url(../../assets/images/homepage/ready-bg-tablet.jpg);
   }
 
+  @include devices(desktop) {
+    height: 16rem;
+  }
+
   &__content {
     height: 100%;
     padding: 2rem;
     @include flex(column, center);
 
-    @include devices(desktop-large) {
+    @include devices(desktop) {
+      background-image: url(../../assets/images/homepage/ready-bg-desktop.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center right;
+      height: 100%;
       @include flex(row, space-around);
+      padding: 4rem;
     }
 
     &--button {
