@@ -6,7 +6,7 @@
     display: none;
     @include devices(desktop) {
       display: block;
-      position: absolute;
+      position: fixed;
       transform: translate(-30.8rem, -16.8rem);
       z-index: 1;
     }
@@ -95,7 +95,8 @@
     padding: 1.5rem;
     padding-bottom: 0rem;
     @include devices(desktop) {
-      width: 32rem;
+      width: 30rem;
+      max-width: 100%;
       height: 34rem;
       padding: 0;
     }
@@ -145,7 +146,7 @@
         background-image: url(/images/homepage/social-events-tablet.jpg);
       }
       @include devices(desktop) {
-        background-image: url(/images/homepage/social-events-desktop.jpg);
+        background-image: url(../../assets/images/homepage/social-events-desktop.jpg);
         height: 100%;
         width: 100%;
       }

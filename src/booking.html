@@ -26,13 +26,13 @@
       <section class="form__container">
         <form id="form" class="form">
           <div class="form__field form__field--text">
-            <label class="sr-only" for="name">Name</label>
+            <!-- <label class="sr-only" for="name">Name</label> -->
             <input type="text" name="name" id="name" placeholder="Name" aria-label="name" class="input-box form-text form-text--regular" />
             <p class="error-message">Error Message</p>
           </div> <!-- .form__field -->
 
           <div class="form__field form__field--text">
-            <label class="sr-only" for="email">Email</label>
+            <!-- <label class="sr-only" for="email">Email</label> -->
             <input type="email" name="email" id="email" placeholder="Email" aria-label="email" class="input-box form-text form-text--regular" />
             <p class="error-message">Error Message</p>
           </div> <!-- .form__field -->
@@ -41,13 +41,13 @@
             <label for="date" class="form-text form-text--regular datetime-field-name">Pick a date</label>
             <p class="error-message">Error Message</p>
             <div class="input-container">
-              <label class="sr-only" for="month">Month</label>
+              <!-- <label class="sr-only" for="month">Month</label> -->
               <input type="number" name="month" aria-label="month" id="month" placeholder="MM" min="01" max="12" class="input-box form-text form-text--regular" />
               
               <label class="sr-only" for="month">Day</label>
               <input type="number" name="day" aria-label="day" id="day" placeholder="DD" min="01" max="31" class="input-box form-text form-text--regular" />
               
-              <label class="sr-only" for="year">Year</label>
+              <!-- <label class="sr-only" for="year">Year</label> -->
               <input type="number" name="year" aria-label="year" id="year" placeholder="YYYY" min="2021" class="input-box form-text form-text--regular" /> 
             </div> <!-- .input-container -->
           </div><!-- .form__field--datetime -->
@@ -59,7 +59,7 @@
               <label class="sr-only" for="hour">Hour</label>
               <input type="number" name="hour" aria-label="hour" id="hour" placeholder="09" min="00" max="11" class="input-box form-text form-text--regular"/>
               
-              <label class="sr-only" for="hour">Minute</label>
+              <!-- <label class="sr-only" for="hour">Minute</label> -->
               <input type="number" name="minutes" aria-label="minutes" id="minute" placeholder="00" min="00" max="59" class="input-box form-text form-text--regular" />
 
               <div class="form__dropdown form__dropdown--arrow" id="arrow" for="am-pm">
@@ -77,7 +77,7 @@
           </div><!-- .form__field--datetime -->
 
           <div class="form__number-people">
-            <span class="sr-only">minus</span>
+            <!-- <span class="sr-only">minus</span> -->
             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11"><path fill="#9E7F66" d="M6.425 2.977V.601H.629v2.376z" class="icon-count" id="icon-minus"/></svg> 
             <input type="text" name="people" aria-label="people" id="people" placeholder="4 people" value="4 people" min="0" class="form-text form-text--bold number-people" />
             <span class="sr-only">plus</span>

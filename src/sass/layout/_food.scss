@@ -34,6 +34,10 @@
     text-align: center;
     margin-bottom: 0.5rem;
 
+    @include devices(tablet) {
+      width: 600px;
+    }
+
     @include devices(desktop) {
       @include flex(column, flex-start);
       padding: minmax(2rem, 6rem);
@@ -41,6 +45,7 @@
       height: 100%;
       width: 26rem;
       text-align: left;
+      margin-top: -12rem;
 
       & > * {
         padding-bottom: 2rem;
@@ -88,6 +93,7 @@
     @include flex(column, space-between);
     @include devices(tablet) {
       min-height: 30rem;
+      max-width: 600px;
     }
     @include devices(desktop) {
       @include flex(column, space-around);
@@ -104,6 +110,18 @@
     width: 100%;
     padding-top: 2rem;
     border-bottom: rgba(255, 255, 255, 0.216) 1px solid;
+
+    .heading-3 {
+      @include devices(tablet) {
+        white-space: no-wrap !important;
+        overflow: hidden;
+      }
+      @include devices(desktop) {
+        white-space: no-wrap;
+        overflow: hidden;
+      }
+    }
+
     @include devices(tablet) {
       border-bottom: none;
     }
@@ -114,7 +132,6 @@
 
     &:last-child {
       border-bottom: none;
-      padding-bottom: 0;
     }
 
     @include devices(desktop) {
